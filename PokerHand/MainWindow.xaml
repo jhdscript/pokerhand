@@ -1,0 +1,201 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokerHand"
+        mc:Ignorable="d"
+        Title="Poker Hand For Polo" Height="450" Width="625" ResizeMode="NoResize" Margin="2">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="GridCards" Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Grid.Column="0" Source="Images/AC.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="1" Source="Images/2C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="2" Source="Images/3C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="3" Source="Images/4C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="4" Source="Images/5C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="5" Source="Images/6C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="6" Source="Images/7C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="7" Source="Images/8C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="8" Source="Images/9C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="9" Source="Images/10C.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="10" Source="Images/JC.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="11" Source="Images/QC.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="0" Grid.Column="12" Source="Images/KC.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+
+            <Image Grid.Row="1" Grid.Column="0" Source="Images/AD.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="1" Source="Images/2D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="2" Source="Images/3D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="3" Source="Images/4D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="4" Source="Images/5D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="5" Source="Images/6D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="6" Source="Images/7D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="7" Source="Images/8D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="8" Source="Images/9D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="9" Source="Images/10D.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="10" Source="Images/JD.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="11" Source="Images/QD.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="1" Grid.Column="12" Source="Images/KD.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+
+            <Image Grid.Row="2" Grid.Column="0" Source="Images/AS.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="1" Source="Images/2S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="2" Source="Images/3S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="3" Source="Images/4S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="4" Source="Images/5S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="5" Source="Images/6S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="6" Source="Images/7S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="7" Source="Images/8S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="8" Source="Images/9S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="9" Source="Images/10S.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="10" Source="Images/JS.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="11" Source="Images/QS.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="2" Grid.Column="12" Source="Images/KS.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+
+            <Image Grid.Row="3" Grid.Column="0" Source="Images/AH.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="1" Source="Images/2H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="2" Source="Images/3H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="3" Source="Images/4H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="4" Source="Images/5H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="5" Source="Images/6H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="6" Source="Images/7H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="7" Source="Images/8H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="8" Source="Images/9H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="9" Source="Images/10H.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="10" Source="Images/JH.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="11" Source="Images/QH.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+            <Image Grid.Row="3" Grid.Column="12" Source="Images/KH.png" Width="30" Margin="2" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown" />
+        </Grid>
+
+        <Grid x:Name="GridCurrent" Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center">Your Cards</TextBlock>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image x:Name="CardPolo1" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardPolo1_Drop" />
+                <Image x:Name="CardPolo2" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardPolo2_Drop"/>
+            </StackPanel>
+            <TextBlock Grid.Row="2" HorizontalAlignment="Center">Flop Cards</TextBlock>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image x:Name="CardFlop1" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardFlop1_Drop"/>
+                <Image x:Name="CardFlop2" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardFlop2_Drop"/>
+                <Image x:Name="CardFlop3" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardFlop3_Drop"/>
+                <Image x:Name="CardFlop4" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardFlop4_Drop"/>
+                <Image x:Name="CardFlop5" Source="Images/blank.png" Width="30" Margin="2" AllowDrop="True" Drop="CardFlop5_Drop"/>
+            </StackPanel>
+            <Button x:Name="BtCalc" Grid.Row="4" Click="BtCalc_Click">Calculate</Button>
+            <Button x:Name="BtReset" Grid.Row="5" Click="BtReset_Click" Margin="0,5">Reset</Button>
+            <Grid Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" FontWeight="Bold">Positive Potential</TextBlock>
+                <TextBlock x:Name="TxtPotPositive" Grid.Row="0" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Foreground="DarkGreen">-</TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0" FontWeight="Bold">Negative Potential</TextBlock>
+                <TextBlock x:Name="TxtPotNegative" Grid.Row="1" Grid.Column="1" TextAlignment="Center" FontWeight="Bold" Foreground="Red">-</TextBlock>
+            </Grid>
+        </Grid>
+
+        <Grid x:Name="GridStats" Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" FontWeight="Bold" Background="DarkGray">Hand</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="2" FontWeight="Bold" Background="DarkGray" TextAlignment="Center">You</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="4" FontWeight="Bold" Background="DarkGray" TextAlignment="Center">Opponent</TextBlock>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" FontWeight="Bold">High Card</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" FontWeight="Bold">Pair</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" FontWeight="Bold">Two Pair</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" FontWeight="Bold">3 Of Kind</TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="0" FontWeight="Bold">Straight</TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="0" FontWeight="Bold">Flush</TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="0" FontWeight="Bold">Full House</TextBlock>
+            <TextBlock Grid.Row="8" Grid.Column="0" FontWeight="Bold">4 Of Kind</TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" FontWeight="Bold">Straight Flush</TextBlock>
+            <TextBlock Grid.Row="10" Grid.Column="0" FontWeight="Bold">Win / Split</TextBlock>
+
+            <TextBlock x:Name="TxtPlayerHighCard" Grid.Row="1" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerPair" Grid.Row="2" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerTwoPair" Grid.Row="3" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayer3OfKing" Grid.Row="4" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerStraight" Grid.Row="5" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerFlush" Grid.Row="6" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerFullHouse" Grid.Row="7" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayer4OfKing" Grid.Row="8" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerStraightFlush" Grid.Row="9" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtPlayerWinSplit" Grid.Row="10" Grid.Column="2" TextAlignment="Center">-</TextBlock>
+
+            <TextBlock x:Name="TxtOpponentHighCard" Grid.Row="1" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentPair" Grid.Row="2" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentTwoPair" Grid.Row="3" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponent3OfKing" Grid.Row="4" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentStraight" Grid.Row="5" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentFlush" Grid.Row="6" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentFullHouse" Grid.Row="7" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponent4OfKing" Grid.Row="8" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentStraightFlush" Grid.Row="9" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+            <TextBlock x:Name="TxtOpponentWinSplit" Grid.Row="10" Grid.Column="4" TextAlignment="Center">-</TextBlock>
+        </Grid>
+    </Grid>
+</Window>
